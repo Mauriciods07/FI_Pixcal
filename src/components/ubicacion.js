@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
 
 const geolocalizar = (setState) => {
   navigator.geolocation.getCurrentPosition(
@@ -24,7 +23,7 @@ const GeoData = ({ state }) => {
   console.log(state);
   var a = state.latitude;
   var b = state.longitude;
-  if (a != 0 && b != 0) {
+  if (a !== 0 && b !== 0) {
     return (
       <>
         <p>Geolocation</p>

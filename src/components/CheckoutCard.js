@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -39,11 +38,6 @@ export default function CheckoutCard({
 }) {
   const classes = useStyles();
   const [{basket}, dispatch] = useStateValue();
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   const removeItem = () =>dispatch({
     type: actionTypes.REMOVE_ITEM,

@@ -20,14 +20,14 @@ const Carousel = () =>{
                     <div className="carousel-item">
                     <img src="/Carrousel-Img/02.jpg" width="100%" height="600vw" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5></h5>
+                        <h5>.</h5>
                         <p></p>
                     </div>
                     </div>
                     <div className="carousel-item">
                     <img src="/Carrousel-Img/03.jpg" width="100%" height="600vw" alt="..."/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5></h5>
+                        <h5>.</h5>
                         <p></p>
                     </div>
                     </div>

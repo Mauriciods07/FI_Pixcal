@@ -1,8 +1,6 @@
-import Product from "./components/Product"
 import './App.css';
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
-import CheckoutCard from "./components/CheckoutCard";
 import CheckoutPage from "./components/CheckoutPage";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import SignIn from "./components/Signin";
@@ -12,7 +10,6 @@ import { auth } from "./firebase";
 import { actionTypes } from "./reducer";
 import {useStateValue} from "./StateProvider"
 import Carousel from "./components/Carousel"
-import Home from "./components/ubicacion";
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -26,7 +23,7 @@ const ColoredLine = ({ color }) => (
 
 
 function App() {
-  const [{user}, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
   useEffect(()=>{
     auth.onAuthStateChanged((authUser)=>{
       console.log(authUser);
@@ -37,7 +34,7 @@ function App() {
         })
       }
     })
-  },[])
+  },[]);
 
   return (
     <Router>

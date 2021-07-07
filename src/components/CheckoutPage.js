@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import CheckoutCard from "./CheckoutCard";
-import Product from "./Product";
 import Total from "./Total";
 import {useStateValue} from "../StateProvider"
 
@@ -16,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 
 const CheckoutPage = () => {
     const classes = useStyles();
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket}] = useStateValue();
 
     function FormRow() {
         return (

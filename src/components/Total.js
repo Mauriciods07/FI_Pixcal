@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) =>({
 
 const Total = () => {
     const classes = useStyles()
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket}] = useStateValue();
     return (
         <div className={classes.root}>
             <h5>Elementos totales: {basket?.length}</h5>

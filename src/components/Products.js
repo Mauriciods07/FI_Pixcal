@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Product from './Product';
 import products from "../product-data"
-import Carousel from "../components/Carousel"
 
 const useStyles = makeStyles((theme) => ({
   root: {
