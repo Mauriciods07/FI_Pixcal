@@ -42,6 +42,7 @@ export default function CheckoutCard({
   const removeItem = () =>dispatch({
     type: actionTypes.REMOVE_ITEM,
     id: id,
+    basket:basket
   })
 
   return (

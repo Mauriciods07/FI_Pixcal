@@ -14,6 +14,7 @@ import { AddShoppingCart } from '@material-ui/icons';
 import accounting from "accounting";
 import { actionTypes } from '../reducer';
 import {useStateValue} from "../StateProvider"
+import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -59,12 +60,14 @@ export default function Product({product : {id, name, productType, image, price,
         price,
         rating,
         description,
+        basket,
       }     
     })
   };
 
   return (
     <Card className={classes.root}>
+      <Link to="personal">
       <CardHeader
         action={
           <Typography
@@ -78,6 +81,7 @@ export default function Product({product : {id, name, productType, image, price,
         title={name}
         subheader={measure}
       />
+      </Link>
       <CardMedia
         className={classes.media}
         image={image}

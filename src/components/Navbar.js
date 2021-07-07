@@ -16,8 +16,6 @@ import { useHistory } from 'react-router-dom';
 import Home from "./ubicacion";
 import SearchIcon from "@material-ui/icons/Search";
 
-
-
 const useStyles = makeStyles((theme) => ({
   root: {
       flexGrow: 1,
@@ -112,7 +110,7 @@ export default function Navbar() {
           <div className={classes.button}>
             <Link to="/signin">
               <Button variant="contained" color="primary" onClick={handleAuth}>
-                <strong>{user ? "Desconectar" : "Registrarse"}</strong>
+                <strong>{user ? "Desconectar" : "Ingresar"}</strong>
                 </Button>
             </Link>
               

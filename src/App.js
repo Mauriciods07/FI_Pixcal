@@ -8,8 +8,9 @@ import SignUp from "./components/Signup";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { actionTypes } from "./reducer";
-import {useStateValue} from "./StateProvider"
-import Carousel from "./components/Carousel"
+import {useStateValue} from "./StateProvider";
+import Carousel from "./components/Carousel";
+import Personal from "./components/Personal";
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -54,9 +55,13 @@ function App() {
                   <Route path="/checkout-page">
                     <CheckoutPage/>
                   </Route>
-                  
+
+                  <Route path="/personal">
+                    <Personal/>
+                  </Route>
+
                   <Route path="/">
-                     <Carousel/>
+                  <Carousel/>
                      
                     <div className="texto">
                       <h1>Para ti</h1>
