@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Primera from "../images/paginaSIAFI.png";
+import Primera from "../images/primera.jpeg";
 import Segunda from "../images/segunda.jpeg";
 import Tercera from "../images/tercera.jpeg";
 
