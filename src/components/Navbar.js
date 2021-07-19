@@ -80,7 +80,7 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar}>
+      <AppBar position="static" className={classes.appBar}>
         <Toolbar>
           <Link to="/">
             <IconButton>
